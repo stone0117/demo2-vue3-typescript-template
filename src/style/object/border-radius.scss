@@ -1,0 +1,118 @@
+//@for $i from 1 through 10 {
+//  [radius#{$i}] {
+//    border-radius: #{$i}Px;
+//    overflow: hidden;
+//  }
+//}
+
+//[circle] {
+//  border-radius: 100rem;
+//}
+
+$--tc-border-radius : 2px;
+
+[radius-normal] {
+  border-radius : $--tc-border-radius !important;;
+  overflow      : hidden;
+}
+
+[radius-normal-input-left].el-input__inner {
+  border-radius : $--tc-border-radius 0 0 $--tc-border-radius !important;
+}
+
+[radius-normal-input-right].el-input__inner {
+  border-radius : 0px $--tc-border-radius $--tc-border-radius 0px !important;
+}
+
+[radius-normal-button-left].el-button {
+  border-radius : $--tc-border-radius 0 0 $--tc-border-radius !important;
+}
+
+[radius-normal-button-right].el-button {
+  border-radius : 0px $--tc-border-radius $--tc-border-radius 0px !important;
+}
+
+[radius0] {
+  border-radius : 0Px;
+  overflow      : hidden;
+}
+
+[radius1] {
+  border-radius : 1Px;
+  overflow      : hidden; }
+
+[radius2] {
+  border-radius : 2Px;
+  overflow      : hidden; }
+
+[radius3] {
+  border-radius : 3Px;
+  overflow      : hidden; }
+
+[radius4] {
+  border-radius : 4Px;
+  overflow      : hidden; }
+
+[radius5] {
+  border-radius : 5Px;
+  overflow      : hidden; }
+
+[radius6] {
+  border-radius : 6Px;
+  overflow      : hidden; }
+
+[radius7] {
+  border-radius : 7Px;
+  overflow      : hidden; }
+
+[radius8] {
+  border-radius : 8Px;
+  overflow      : hidden; }
+
+[radius9] {
+  border-radius : 9Px;
+  overflow      : hidden; }
+
+[radius10] {
+  border-radius : 10Px;
+  overflow      : hidden; }
+
+[radius11] {
+  border-radius : 11Px;
+  overflow      : hidden; }
+
+[radius12] {
+  border-radius : 12Px;
+  overflow      : hidden; }
+
+[radius13] {
+  border-radius : 13Px;
+  overflow      : hidden; }
+
+[radius14] {
+  border-radius : 14Px;
+  overflow      : hidden; }
+
+[radius15] {
+  border-radius : 15Px;
+  overflow      : hidden; }
+
+[radius16] {
+  border-radius : 16Px;
+  overflow      : hidden; }
+
+[radius17] {
+  border-radius : 17Px;
+  overflow      : hidden; }
+
+[radius18] {
+  border-radius : 18Px;
+  overflow      : hidden; }
+
+[radius19] {
+  border-radius : 19Px;
+  overflow      : hidden; }
+
+[radius20] {
+  border-radius : 20Px;
+  overflow      : hidden; }

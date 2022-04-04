@@ -1,0 +1,173 @@
+[fc] {
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+}
+
+[fc-row] {
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  flex-direction  : row;
+}
+
+[fc-column] {
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  flex-direction  : column;
+}
+
+////////////////////////////////////////////////////////////////////////////
+///////////////// flex-direction  : row ////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+[flex-row-space-between-center] {
+  display         : flex;
+  flex-direction  : row;
+  justify-content : space-between;
+  align-items     : center
+}
+[flex-row-space-between-stretch] {
+  display         : flex;
+  flex-direction  : row;
+  justify-content : space-between;
+  align-items     : stretch;
+}
+
+[flex-row-space-between-flex-start] {
+  display         : flex;
+  flex-direction  : row;
+  justify-content : space-between;
+  align-items     : flex-start
+}
+
+[flex-row-flex-end-center] {
+  display         : flex;
+  flex-direction  : row;
+  justify-content : flex-end;
+  align-items     : center
+}
+
+[flex-row-flex-start-center] {
+  display         : flex;
+  flex-direction  : row;
+  justify-content : flex-start;
+  align-items     : center
+}
+
+[flex-row-center-center] {
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+}
+
+[flex-row-flex-start-flex-start] {
+  display         : flex;
+  flex-direction  : row;
+  justify-content : flex-start;
+  align-items     : flex-start;
+}
+
+[flex-row-flex-start-stretch] {
+  display         : flex;
+  flex-direction  : row;
+  justify-content : flex-start;
+  align-items     : stretch;
+}
+
+////////////////////////////////////////////////////////////////////////////
+///////////////// flex-direction  : column /////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+[flex-column-center-center] {
+  display         : flex;
+  flex-direction  : column;
+  justify-content : center;
+  align-items     : center
+}
+[flex-column-space-between-flex-start] {
+  display         : flex;
+  flex-direction  : column;
+  justify-content : space-between;
+  align-items     : flex-start;
+}
+[flex-column-flex-end-flex-start] {
+  display         : flex;
+  flex-direction  : column;
+  justify-content : flex-end;
+  align-items     : flex-start;
+}
+[flex-column-space-between-flex-end] {
+  display         : flex;
+  flex-direction  : column;
+  justify-content : space-between;
+  align-items     : flex-end;
+}
+
+[flex-column-flex-start-center] {
+  display         : flex;
+  flex-direction  : column;
+  justify-content : flex-start;
+  align-items     : center
+}
+
+[flex-column-flex-start-flex-start] {
+  display         : flex;
+  flex-direction  : column;
+  justify-content : flex-start;
+  align-items     : flex-start;
+}
+
+[flex-column-flex-end-center] {
+  display         : flex;
+  flex-direction  : column;
+  justify-content : flex-end;
+  align-items     : center
+}
+
+[flex-column-center-flex-end] {
+  display         : flex;
+  flex-direction  : column;
+  justify-content : center;
+  align-items     : flex-end
+}
+
+////////////////////////////////////////////////////////////////////////////
+[bbb1] {box-shadow : 0 0 0 1px #CCC inset;}
+
+[bbb2] {box-shadow : 0 0 0 2px #CCC inset;}
+
+[bbb3] {box-shadow : 0 0 0 3px #CCC inset;}
+
+[bbb4] {box-shadow : 0 0 0 4px #CCC inset;}
+
+[bbb5] {box-shadow : 0 0 0 5px #CCC inset;}
+
+[bbb6] {box-shadow : 0 0 0 6px #CCC inset;}
+
+[bbb7] {box-shadow : 0 0 0 7px #CCC inset;}
+
+[bbb8] {box-shadow : 0 0 0 8px #CCC inset;}
+
+[bbb9] {box-shadow : 0 0 0 9px #CCC inset;}
+
+[kk10] {outline : 1px solid #CCC;}
+
+[kk1] {outline : 1px solid #CCC !important;}
+
+[kk2] {outline : 1px solid #CCC;}
+
+[kk3] {outline : 1px solid #CCC;}
+
+[kk4] {outline : 1px solid #CCC;}
+
+[kk5] {outline : 1px solid #CCC;}
+
+[kk6] {outline : 1px solid #CCC;}
+
+[kk7] {outline : 1px solid #CCC;}
+
+[kk8] {outline : 1px solid #CCC;}
+
+[kk9] {outline : 1px solid #CCC;}
+
+[kk10] {outline : 1px solid #CCC;}

@@ -1,0 +1,12 @@
+@function toRem($px) { //$px为需要转换的字号
+  @return $px / 100px * 1rem; //100px为根字体大小
+}
+
+@function toVW($px) { //$px为需要转换的字号
+  // 100vw = 375px
+  // 1vw = 3.75px
+  // 1vw / 3.75 = 1px
+  // 100px * (1vw / 3.75px)
+  @return $px / 3.75px * 1vw; //100px为根字体大小
+}
+

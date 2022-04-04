@@ -1,0 +1,40 @@
+<template>
+  <div>
+    <span slot="title">{(title)}</span>
+  </div>
+</template>
+
+<script type="text/ecmascript-6">
+
+// import {mapMutations, mapActions, mapState, mapGetters} from 'vuex';
+
+export default {
+  // extends   : {},
+  mixins    : [],
+  components: {},
+  name      : 'MenuItem',
+  props     : {
+    icon : { type: String, default: '' },
+    title: { type: String, default: '' },
+  },
+  data() {
+    return {}
+  },
+  watch   : {
+    // someObject: { handler: function (val, oldVal) { /* ... */ }, deep: true, immediate: true },
+  },
+  computed: {},
+  methods : {},
+  created() {
+    // document.documentElement.scrollTop = 0
+  },
+  destroyed() {},
+  mounted() {},
+}
+</script>
+
+<style scoped lang="scss" rel="stylesheet/scss">
+.MenuItem {
+
+}
+</style>

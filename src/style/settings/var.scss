@@ -1,0 +1,35 @@
+/* Color
+----------------------- */
+$color-primary              : #FF5777;
+$color-white                : #FFF;
+$color-black                : #000;
+
+$color-text-primary         : #333;
+$color-text-secondary       : #666;
+$color-text-tertiary        : $color-white;
+$color-text-quaternary      : $color-primary;
+
+$background-color-primary   : #F1F1F1;
+$background-color-secondary : $color-white;
+$background-color-tertiary  : $color-primary;
+
+/* Border
+----------------------- */
+$border-color-base          : #E5E5E5;
+$border-width-base          : 1Px !default;
+$border-style-base          : solid !default;
+$border-base                : $border-width-base $border-style-base $border-color-base !default;
+
+// https://blog.csdn.net/qq_40511157/article/details/102931966
+// PX和Px的用途
+// 如果你希望部分 px 单位不被转换成 rpx 或者 rem ，最简单的做法就是在 px 单位中增加一个大写字母，例如 Px 或者 PX 这样，则会被转换插件忽略。如：
+
+$tc-header-width            : 1200px;
+$tc-page-main-width         : 1200px;
+//$tc-header-height           : 65px;
+$tc-header-height           : 80px;
+$tc-header-color            : #778CA2;
+$tc-header-background-color : #14151E;
+///
+$cz-page-min-height         : calc(100vh - 50px - 30px - 6px - 24px - 24px);
+

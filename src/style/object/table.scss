@@ -1,0 +1,29 @@
+////////////////////////////////////////////////////////////////////////////
+///////////////// el-table /////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+[cz-table].el-table th.el-table__cell.is-leaf,
+[cz-table].el-table td.el-table__cell {
+  //border-bottom : 1px solid #DFE6EC;
+  border-bottom : none;
+}
+
+[cz-table].el-table {
+  min-height : 484px;
+
+  .el-table__empty-block{
+    min-height: 430px;
+  }
+}
+[cz-table].el-table::before {
+  height : 0;
+}
+
+[cz-table].el-table--enable-row-hover .el-table__body tr:hover > td.el-table__cell {
+  background-color : #F8F8F8;
+  cursor           : pointer;
+}
+
+[cz-table-arrow].el-table--enable-row-hover .el-table__body tr:hover > td.el-table__cell {
+  background-color : #F8F8F8;
+  cursor           : default !important;
+}

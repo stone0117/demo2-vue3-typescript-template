@@ -1,0 +1,18 @@
+///
+//[zt-input].el-input__inner {
+//  line-height   : 44px !important;
+//  border-radius : 0px !important;
+//  height        : 44px !important;
+//}
+///
+[zt-input].el-input.is-active .el-input__inner,
+[zt-input].el-input__inner:focus {
+  border-color : #4D7CFE !important;
+  outline      : 0
+}
+
+[cz-input].el-input.is-active  .el-input__inner,
+[cz-input].el-input__inner:focus {
+  border-color : #000000 !important;
+  outline      : 0
+}

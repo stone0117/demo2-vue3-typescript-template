@@ -1,0 +1,24 @@
+[dropdown-no-animation].el-zoom-in-top-enter-active,
+[dropdown-no-animation].el-zoom-in-top-leave-active {
+    transition : none;
+  }
+
+[dialog-no-header] {
+  .el-dialog__header {
+    display : none;
+  }
+}
+
+[dialog-no-body-padding] {
+  .el-dialog__body {
+    padding : 0;
+  }
+}
+
+[dialog-no-footer-padding] {
+  .el-dialog__footer {
+    padding : 0;
+  }
+}
+
+

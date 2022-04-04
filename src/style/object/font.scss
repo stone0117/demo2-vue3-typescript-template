@@ -1,0 +1,42 @@
+[zt-h1] {
+  font-size   : 16px;
+  font-weight : 500;
+  color       : #14151E;
+}
+
+[zt-normal-font] {
+
+  font-weight : 400;
+  color       : #778CA2;
+}
+
+[zt-active-font] {
+
+  font-weight : 400;
+  color       : #4D7CFE;
+}
+
+///
+//@for $i from 1 through 9 {
+//  [font-weight-#{$i * 100}] {
+//    font-weight : #{$i * 100};
+//  }
+//}
+
+[font-weight-100] {font-weight : 100; }
+
+[font-weight-200] {font-weight : 200; }
+
+[font-weight-300] {font-weight : 300; }
+
+[font-weight-400] {font-weight : 400; }
+
+[font-weight-500] {font-weight : 500; }
+
+[font-weight-600] {font-weight : 600; }
+
+[font-weight-700] {font-weight : 700; }
+
+[font-weight-800] {font-weight : 800; }
+
+[font-weight-900] {font-weight : 900; }

@@ -1,0 +1,105 @@
+const path                        = require('path')
+const fs                          = require('fs')
+const fse                         = require('fs-extra')
+const Velocity                    = require('velocityjs')
+const { capitalCase, pascalCase } = require('change-case')
+
+let parentFolder = 'es6-demo-management'
+let parentName   = 'Es6DemoManagement'
+let parentTitle  = 'es6管理'
+///
+let folder       = 'es6-test-001'
+let name         = 'Es6Test001'
+let title        = 'es6测试001'
+
+console.log(`pascalCase(folder) = `, pascalCase(folder))
+console.log(`capitalCase(folder) = `, capitalCase(folder))
+
+const route = {
+  path    : parentFolder,
+  name    : parentName,
+  title   : parentFolder,
+  children: [
+    {
+      path    : folder,
+      name    : name,
+      title   : title,
+      children: [],
+    },
+  ],
+}
+
+function forTree(tree) {
+  if (tree.hasOwnProperty('children') && tree.children && tree.children.length > 0) {
+    for (let child of tree.children) {
+      forTree(child)
+    }
+  }
+  else {
+    // tree.children        = undefined
+    // tree.signupTime      = []
+    // tree.signupStartTime = ''
+    // tree.signupEndTime   = ''
+    // tree.price           = ''
+    // tree.count           = ''
+    // tree.remark          = ''
+    console.log(`tree = `, tree)
+  }
+}
+
+forTree(route)
+
+fse.ensureDirSync(path.resolve(__dirname, `./${parentFolder}`))
+fse.ensureDirSync(path.resolve(__dirname, `./${parentFolder}/${folder}`))
+
+!async function () {
+
+  const context = {
+    name: parentName,
+  }
+
+  index_vue:{
+    const vmString = await pReadTextFile(path.resolve(__dirname, `./templates/index.vue.vm`)) + ''
+    const content  = Velocity.render(vmString, context)
+    await pWriteTextFile(path.resolve(__dirname, `./${parentFolder}/${folder}/index.vue`), content)
+  }
+
+  const icon  = 'el-icon-folder'
+  const route = `{
+  path: '/${parentFolder}',
+  component : Layout,
+  redirect  : '/${parentFolder}/${folder}',
+  alwaysShow: true,
+  name      : '${parentName}',
+  meta      : { title: '${parentTitle}', icon: '${icon}' },
+  children  : [
+    {
+      path     : '${folder}',
+      component: () => import(('@/views/${parentFolder}/${folder}')),
+      name     : '${name}',
+      meta     : { title  : '${title}', noCache: true, },
+    },
+  ],
+},`
+
+  console.log(route)
+
+}()
+
+function pWriteTextFile(filepath, content) {
+  return new Promise((resolve, reject) => {
+    fs.writeFile(filepath, content, 'utf8', function (err) {
+      if (err) {reject(err)}
+      else {resolve()}
+    })
+  })
+}
+
+function pReadTextFile(filepath) {
+  return new Promise((resolve, reject) => {
+    fs.readFile(filepath, 'utf-8', function (err, data) {
+      if (err) {reject(err)}
+      else {resolve(data)}
+    })
+  })
+}

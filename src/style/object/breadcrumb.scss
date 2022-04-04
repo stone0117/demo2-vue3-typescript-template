@@ -1,0 +1,33 @@
+[zt-breadcrumb] {
+  .el-breadcrumb__inner {
+    color       : #778CA2 !important;
+    font-size   : 16px !important;
+    font-weight : 400 !important;
+  }
+
+  .el-breadcrumb__separator {
+    color       : #778CA2 !important;
+    font-weight : 400 !important;
+    font-size   : 16px;
+    margin      : 0 7px;
+
+  }
+
+  .el-breadcrumb__item:last-of-type {
+    .el-breadcrumb__inner {
+      color       : #65697E !important;
+      font-size   : 16px !important;
+      font-weight : bold !important;
+    }
+  }
+
+  .el-breadcrumb__inner:hover {
+    font-weight : 400 !important;
+    color       : #65697E !important;
+    cursor      : text
+  }
+
+  .el-breadcrumb__inner.is-link {
+    cursor : pointer !important;
+  }
+}

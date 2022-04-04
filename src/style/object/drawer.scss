@@ -1,0 +1,28 @@
+[drawer-no-header] {
+  .el-drawer__header {
+    display : none;
+  }
+}
+
+[drawer-no-header-padding] {
+  .el-drawer__header {
+    //padding : 0;
+    padding-left : 0;
+    padding-top  : 0;
+    margin       : 0;
+  }
+}
+
+[drawer-no-body-padding] {
+  .el-drawer__body {
+    padding : 0;
+  }
+}
+
+//[dialog-no-footer-padding] {
+//  .el-dialog__footer {
+//    padding : 0;
+//  }
+//}
+
+

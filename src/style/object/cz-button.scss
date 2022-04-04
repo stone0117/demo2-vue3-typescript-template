@@ -1,0 +1,78 @@
+////////////////////////////////////////////////////////////////////////////
+///////////////// 长征文字按钮 ///////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+[cz-button-text].el-button--text {
+  color : #1890FF;
+}
+
+[cz-button-text].el-button--text:active {
+  //color            : #C32B21;
+  color            : #1890FF;
+  border-color     : transparent;
+  background-color : transparent;
+}
+
+[cz-button-text].el-button--text:hover,
+[cz-button-text].el-button--text:focus {
+  //color            : #E15951;
+  color            : #1A73E2;
+  border-color     : transparent;
+  background-color : transparent;
+  text-decoration  : underline;
+}
+
+
+[cz-button-text].el-button--text.is-disabled {
+  color            : #CCC;
+}
+
+[cz-button-text].el-button--text.is-disabled:active {
+  color            : #CCC;
+  border-color     : transparent;
+  background-color : transparent;
+}
+
+
+[cz-button-text].el-button--text.is-disabled:hover,
+[cz-button-text].el-button--text.is-disabled:focus {
+  //color            : #AAA;
+  color            : #CCC;
+  border-color     : transparent;
+  background-color : transparent;
+  text-decoration  : none;
+}
+////////////////////////////////////////////////////////////////////////////
+///////////////// 长征文字 删除按钮 //////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+
+[cz-button-text-delete].el-button--text {
+  color : #CCC;
+}
+
+[cz-button-text-delete].el-button--text:active {
+  //color            : #C32B21;
+  color            : #CCC;
+  border-color     : transparent;
+  background-color : transparent;
+}
+
+[cz-button-text-delete].el-button--text:hover,
+[cz-button-text-delete].el-button--text:focus {
+  //color            : #E15951;
+  color            : #AAA;
+  border-color     : transparent;
+  background-color : transparent;
+  text-decoration  : underline;
+}
+
+//.el-button:active {
+//  color        : #C32B21;
+//  border-color : #C32B21;
+//  outline      : none;
+//}
+//
+//.el-button:hover, .el-button:focus {
+//  color            : #D93025;
+//  border-color     : #F4C1BE;
+//  background-color : #FBEAE9;
+//}

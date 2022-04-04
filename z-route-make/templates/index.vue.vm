@@ -1,0 +1,31 @@
+<template>
+  <div class="${name}">
+    <h1>hello <b>${name}</b></h1>
+  </div>
+</template>
+
+<script type="text/ecmascript-6">
+
+export default {
+  // extends   : {},
+  mixins    : [],
+  components: {},
+  name      : '${name}',
+  props     : {},
+  data() {
+    return {}
+  },
+  watch   : {},
+  computed: {},
+  methods : {},
+  created() {},
+  destroyed() {},
+  mounted() {},
+}
+</script>
+
+<style scoped lang="scss" rel="stylesheet/scss">
+.${name} {
+
+}
+</style>
