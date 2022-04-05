@@ -14,7 +14,7 @@ function pbcopy(data) {
 ////////////////////////////////////////////////////////////////////////////
 ///////////////// 配置路由 //////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////
-const parentFolder = 'layout-management'
+const parentFolder = 'typescript-management'
 const parentName   = pascalCase(parentFolder)
 const parentTitle  = capitalCase(parentFolder)
 
@@ -25,9 +25,9 @@ const children = [
   // getChildConfig('es6-test-008'),
 ]
 
-let start = 21
+let start = 0
 for (let i = 0; i < 20; ++i) {
-  let folder = 'layout-test-' + String(start).padStart(3, '0')
+  let folder = 'typescript-test-' + String(start).padStart(3, '0')
   children.push(getChildConfig(folder))
   start++
 }
@@ -65,7 +65,7 @@ for (let i = 0; i < 20; ++i) {
     return `
       {
         path     : '${item.folder}',
-        component: () => import('@/views/${parentFolder}/${item.folder}'),
+        component: () => import('@/views/${parentFolder}/${item.folder}/index.vue'),
         name     : '${item.name}',
         meta     : { title  : '${item.title}', noCache: true, },
       }`

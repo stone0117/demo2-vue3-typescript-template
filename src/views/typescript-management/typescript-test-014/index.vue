@@ -1,6 +1,6 @@
 <template>
-  <div class="${name}">
-    <h1>hello <b>${name}</b></h1>
+  <div class="TypescriptTest_014">
+    <h1>hello <b>TypescriptTest_014</b></h1>
   </div>
 </template>
 
@@ -11,7 +11,7 @@ export default defineComponent({
   // extends   : {},
   mixins    : [],
   components: {},
-  name      : '${name}',
+  name      : 'TypescriptTest_014',
   props     : {},
   data() {
     return {}
@@ -26,7 +26,7 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss" rel="stylesheet/scss">
-.${name} {
+.TypescriptTest_014 {
 
 }
 </style>

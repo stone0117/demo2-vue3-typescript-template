@@ -8,6 +8,9 @@
             <!-- <el-icon>-->
             <!--   <edit />-->
             <!-- </el-icon>-->
+            <el-icon :size="20">
+              <folder />
+            </el-icon>
           </template>
 
           <template v-if="onlyOneChild.meta.title">
@@ -22,9 +25,9 @@
       <template v-slot:title>
         <!-- <item v-if="item.meta" :icon="item.meta && item.meta.icon" :title="item.meta.title" />-->
         <template v-if="item.meta && item.meta.icon">
-          <!-- <el-icon>-->
-          <!--   <edit />-->
-          <!-- </el-icon>-->
+          <el-icon :size="20">
+            <folder />
+          </el-icon>
         </template>
 
         <template v-if="item.meta.title">
@@ -51,9 +54,11 @@ import {isExternal} from '@/utils/validate'
 import Item         from './Item'
 import AppLink      from './Link'
 
+import {Folder} from '@element-plus/icons-vue' // svg图标
+
 export default {
   name      : 'SidebarItem',
-  components: { Item, AppLink },
+  components: { Item, AppLink, Folder },
   mixins    : [],
   props     : {
     // route object
